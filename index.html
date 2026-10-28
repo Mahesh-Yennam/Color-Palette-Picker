@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RFQ8M0VSFN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-RFQ8M0VSFN');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Palette &amp; Picker Studio — Gamility Tools</title>
+  <meta name="description" content="Free online color palette generator, HEX/RGB/HSL converter, WCAG accessibility contrast checker, and shade tint scale creator. 100% in-browser.">
+  <meta name="keywords" content="color palette generator, color picker, hex to rgb, hsl converter, wcag contrast checker, color harmonies, shades and tints">
+  <meta name="theme-color" content="#090e1a">
+    <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Color Palette &amp; Picker Studio — Gamility Tools">
+  <meta property="og:description" content="Free online color palette generator, HEX/RGB/HSL converter, WCAG accessibility contrast checker, and shade tint scale creator. 100% in-browser.">
+  <meta property="og:image" content="preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:alt" content="Color Palette &amp; Picker Studio — Gamility Tools">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Color Palette &amp; Picker Studio — Gamility Tools">
+  <meta name="twitter:description" content="Free online color palette generator, HEX/RGB/HSL converter, WCAG accessibility contrast checker, and shade tint scale creator. 100% in-browser.">
+  <meta name="twitter:image" content="preview.png">
+
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Return Ribbon -->
+  <header class="top-nav-ribbon" role="banner">
+    <div class="ribbon-container">
+      <div class="ribbon-left">
+        <a href="https://mahesh-yennam.github.io/Gamility/" class="ribbon-brand" title="Gamility Home">
+          <svg class="brand-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="6" width="20" height="12" rx="4"></rect>
+            <path d="M6 12h4m-2-2v4m7-3h.01m3 2h.01"></path>
+          </svg>
+          <span class="brand-name">Gamility</span>
+          <span class="brand-badge">Tools</span>
+        </a>
+      </div>
+      <div class="ribbon-right">
+        <a href="https://mahesh-yennam.github.io/Gamility/tools.html" class="ribbon-back-btn" title="Return to Utility Tools Hub">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Tools</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main App Shell -->
+  <main class="app-main" id="main-content">
+    <div class="app-container">
+
+      <!-- Tool Header -->
+      <header class="tool-hero">
+        <div class="hero-header-row">
+          <div class="hero-title-group">
+            <div class="tool-badge">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a7 7 0 0 0 0 14 7 7 0 0 1 0 8"></path>
+              </svg>
+              <span>Design &amp; Creative Utility</span>
+            </div>
+            <h1 class="hero-title">Color Palette &amp; Picker Studio</h1>
+            <p class="hero-desc">Bidirectional HEX/RGB/HSL converter, chromatic harmony palette builder, WCAG contrast analyzer &amp; tint matrix.</p>
+          </div>
+          <div class="privacy-pill" title="Executed 100% in client memory. No telemetry.">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+            <span>100% In-Browser &amp; Private</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Top Row: Color Inspector & Accessibility Auditing -->
+      <section class="top-row-grid">
+        
+        <!-- Left: Interactive Color Inspector -->
+        <div class="studio-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <h2 class="card-title">Color Inspector &amp; Converter</h2>
+              <span class="card-subtitle">Live multi-format synchronization</span>
+            </div>
+            <button class="tool-btn" id="btn-random-color" type="button" title="Generate random base color">
+              <span>🎲 Random Color</span>
+            </button>
+          </div>
+
+          <div class="inspector-body">
+            <!-- Large Color Preview Block -->
+            <div class="preview-block-wrapper">
+              <div class="color-preview-large" id="main-color-preview">
+                <label for="native-color-picker" class="picker-trigger-label" title="Click to open color picker">
+                  <input type="color" id="native-color-picker" value="#3b82f6" class="sr-only">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                  <span>Pick Color</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Formats Inputs Grid -->
+            <div class="formats-grid">
+              
+              <!-- HEX -->
+              <div class="format-item">
+                <div class="format-header">
+                  <label for="input-hex" class="format-name">HEX</label>
+                  <button class="copy-format-btn" data-copy-target="input-hex" type="button" title="Copy HEX">Copy</button>
+                </div>
+                <div class="input-with-hash">
+                  <span class="hash-symbol">#</span>
+                  <input type="text" id="input-hex" class="format-input" value="3B82F6" maxlength="7" spellcheck="false">
+                </div>
+              </div>
+
+              <!-- RGB -->
+              <div class="format-item">
+                <div class="format-header">
+                  <label class="format-name">RGB</label>
+                  <button class="copy-format-btn" id="btn-copy-rgb" type="button" title="Copy RGB">Copy</button>
+                </div>
+                <div class="channels-row">
+                  <input type="number" id="input-r" class="channel-input" min="0" max="255" value="59" title="Red">
+                  <input type="number" id="input-g" class="channel-input" min="0" max="255" value="130" title="Green">
+                  <input type="number" id="input-b" class="channel-input" min="0" max="255" value="246" title="Blue">
+                </div>
+              </div>
+
+              <!-- HSL -->
+              <div class="format-item">
+                <div class="format-header">
+                  <label class="format-name">HSL</label>
+                  <button class="copy-format-btn" id="btn-copy-hsl" type="button" title="Copy HSL">Copy</button>
+                </div>
+                <div class="channels-row">
+                  <input type="number" id="input-h" class="channel-input" min="0" max="360" value="217" title="Hue (0-360)">
+                  <input type="number" id="input-s" class="channel-input" min="0" max="100" value="91" title="Saturation %">
+                  <input type="number" id="input-l" class="channel-input" min="0" max="100" value="60" title="Lightness %">
+                </div>
+              </div>
+
+              <!-- CMYK & HSV Readouts -->
+              <div class="format-item">
+                <div class="format-header">
+                  <span class="format-name">CMYK &amp; HSV</span>
+                </div>
+                <div class="extra-readouts">
+                  <div class="readout-pill" id="readout-cmyk" title="Cyan, Magenta, Yellow, Key">CMYK: 76, 47, 0, 4</div>
+                  <div class="readout-pill" id="readout-hsv" title="Hue, Saturation, Value">HSV: 217°, 76%, 96%</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: WCAG Accessibility Contrast Checker -->
+        <div class="studio-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <h2 class="card-title">WCAG 2.1 Contrast &amp; Accessibility</h2>
+              <span class="card-subtitle">Legibility and compliance standards</span>
+            </div>
+          </div>
+
+          <div class="accessibility-body">
+            
+            <!-- Comparison Dual Boxes -->
+            <div class="contrast-samples-grid">
+              
+              <!-- On White -->
+              <div class="contrast-box box-on-white" id="sample-on-white">
+                <div class="contrast-score-line">
+                  <span class="sample-label">On White (#FFF)</span>
+                  <span class="contrast-ratio" id="ratio-on-white">4.22 : 1</span>
+                </div>
+                <div class="sample-text-preview" id="preview-text-white">
+                  Gamility Sample Text (16px)
+                </div>
+                <div class="compliance-badges" id="badges-on-white">
+                  <span class="comp-badge badge-fail">AA Normal</span>
+                  <span class="comp-badge badge-pass">AA Large</span>
+                  <span class="comp-badge badge-fail">AAA</span>
+                </div>
+              </div>
+
+              <!-- On Black -->
+              <div class="contrast-box box-on-black" id="sample-on-black">
+                <div class="contrast-score-line">
+                  <span class="sample-label">On Black (#000)</span>
+                  <span class="contrast-ratio" id="ratio-on-black">4.97 : 1</span>
+                </div>
+                <div class="sample-text-preview" id="preview-text-black">
+                  Gamility Sample Text (16px)
+                </div>
+                <div class="compliance-badges" id="badges-on-black">
+                  <span class="comp-badge badge-pass">AA Normal</span>
+                  <span class="comp-badge badge-pass">AA Large</span>
+                  <span class="comp-badge badge-fail">AAA</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Accessibility Guidance Notes -->
+            <div class="wcag-info-note">
+              <span>ℹ️ <strong>WCAG Standard:</strong> AA Normal requires ≥ 4.5:1, AA Large (18pt+) requires ≥ 3.0:1, AAA requires ≥ 7.0:1.</span>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Middle Row: Chromatic Harmonies Palette Studio -->
+      <section class="harmonies-section">
+        <div class="studio-card">
+          
+          <div class="card-header">
+            <div class="card-title-group">
+              <h2 class="card-title">Color Harmony Schemes</h2>
+              <span class="card-subtitle">Curated color theory relationships</span>
+            </div>
+
+            <div class="harmonies-action-toolbar">
+              <div class="harmony-tabs" role="tablist">
+                <button class="harmony-tab active" data-harmony="analogous" role="tab">Analogous</button>
+                <button class="harmony-tab" data-harmony="complementary" role="tab">Complementary</button>
+                <button class="harmony-tab" data-harmony="triadic" role="tab">Triadic</button>
+                <button class="harmony-tab" data-harmony="tetradic" role="tab">Tetradic</button>
+                <button class="harmony-tab" data-harmony="monochromatic" role="tab">Monochrome</button>
+              </div>
+
+              <button class="tool-btn" id="btn-export-css" type="button" title="Copy CSS Variables to clipboard">
+                <span>📋 Copy CSS</span>
+              </button>
+              <button class="tool-btn" id="btn-export-png" type="button" title="Download Palette as PNG image">
+                <span>🖼️ Export PNG</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- 5-Color Interactive Palette Strip -->
+          <div class="palette-strip-container" id="palette-strip">
+            <!-- 5 Palette Cards dynamically rendered by JS -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Bottom Row: Shades & Tints Matrix -->
+      <section class="shades-section">
+        <div class="studio-card">
+          <div class="card-header">
+            <div class="card-title-group">
+              <h2 class="card-title">10-Step Shades &amp; Tints Scale</h2>
+              <span class="card-subtitle">Click any swatch to copy or load as active color</span>
+            </div>
+          </div>
+          
+          <div class="shades-tints-grid" id="shades-tints-container">
+            <!-- 10 Gradient Swatches rendered dynamically by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Platform Footer -->
+      <footer class="tool-footer">
+        <p class="footer-copy">Copyright &copy; 2026 Gamility. All rights reserved. &bull; 100% In-Browser Color Engine</p>
+      </footer>
+
+    </div>
+  </main>
+
+  <!-- Toast Notification -->
+  <div class="toast-notification" id="toast" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toast-message">Copied to clipboard!</span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="paletteWood" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Container -->
+  <rect width="64" height="64" rx="16" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5" />
+
+  <!-- Painter Palette Body -->
+  <path d="M32 10 C18 10 10 20 10 32 C10 44 20 54 32 54 C36 54 40 51 40 47 C40 44 38 43 38 40 C38 37 41 34 44 34 C49 34 54 31 54 26 C54 16 44 10 32 10 Z" 
+        fill="url(#paletteWood)" 
+        stroke="#475569" 
+        stroke-width="1.8" />
+
+  <!-- Thumb Hole -->
+  <circle cx="43" cy="43" r="4.5" fill="#090e1a" stroke="#334155" stroke-width="1.2" />
+
+  <!-- Vibrant Color Swatches -->
+  <circle cx="21" cy="22" r="3.8" fill="#f43f5e" filter="url(#glow)" />
+  <circle cx="31" cy="17" r="3.8" fill="#f59e0b" filter="url(#glow)" />
+  <circle cx="41" cy="21" r="3.8" fill="#10b981" filter="url(#glow)" />
+  <circle cx="21" cy="34" r="3.8" fill="#06b6d4" filter="url(#glow)" />
+  <circle cx="28" cy="43" r="3.8" fill="#8b5cf6" filter="url(#glow)" />
+</svg>

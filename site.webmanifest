@@ -1,0 +1,16 @@
+{
+  "name": "Color Palette & Picker Studio — Gamility Tools",
+  "short_name": "ColorStudio",
+  "description": "Professional in-browser color picker, HEX/RGB/HSL converter, harmony generator, and WCAG contrast analyzer.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#090e1a",
+  "theme_color": "#090e1a",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
